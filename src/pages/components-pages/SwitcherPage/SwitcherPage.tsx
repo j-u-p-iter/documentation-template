@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { Switcher } from '../../../components';
+
 export const SwitcherPage = () => {
-  return <div>Switcher Page</div>
+  return <Switcher />
 };

@@ -784,6 +784,10 @@
     "@types/classnames" "^2.2.6"
     classnames "^2.2.6"
 
+"@j.u.p.iter/react-switcher@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@j.u.p.iter/react-switcher/-/react-switcher-1.0.0.tgz#82811d4a4fffb78b5f8998a57934b71ac141a632"
+
 "@j.u.p.iter/react-tree@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@j.u.p.iter/react-tree/-/react-tree-1.0.1.tgz#fd1118f590680c7ee781514e7b99068e9cda8896"
