@@ -1,0 +1,1 @@
+export { ComponentsPages } from './ComponentsPages';

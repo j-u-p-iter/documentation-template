@@ -1,13 +1,15 @@
 import * as React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import { createLayoutWithInternalParts } from './layout';
+import { Layout } from './Layout';
 
 class App extends React.Component {
   render() {
-    const LayoutWithContent = createLayoutWithInternalParts(<div>MainContent</div>);
-
-    return <BrowserRouter><LayoutWithContent /></BrowserRouter>
+    return (
+      <BrowserRouter>
+        <Layout />
+      </BrowserRouter>
+    );
   }
 }
 

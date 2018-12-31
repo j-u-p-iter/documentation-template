@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Navigation } from '@j.u.p.iter/react-navigation';
 
+import styles from './Sidebar.module.scss';
+
 const navigationConfig = [
   {
     id: '/',
@@ -17,6 +19,6 @@ export const Sidebar = () => (
     currentPath='/'
     config={navigationConfig} 
     activeClassName='active'
-    className='navigation'
+    className={styles.navigation}
   />
 );
