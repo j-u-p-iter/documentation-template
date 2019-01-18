@@ -11,6 +11,10 @@ const navigationConfig = [
   {
     id: '/components/switcher',
     title: 'Switcher',
+  },
+  {
+    id: '/components/select',
+    title: 'Select',
   }
 ];
 
