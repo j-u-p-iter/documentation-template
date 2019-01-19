@@ -1,0 +1,39 @@
+.menu {
+  top: 0;
+  background: #fff;
+  padding: 53px 22px 7px;
+  border-radius: 19px;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, .12);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 22.5px;
+  border: 1px solid #f1f1f1;
+  padding: 0 22px;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  background: #000; 
+  overflow: hidden;
+}
+
+.label {
+  flex-grow: 1;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.opened {
+  border-color: transparent;
+}
+
+.placeholder {
+  user-select: none;
+}
