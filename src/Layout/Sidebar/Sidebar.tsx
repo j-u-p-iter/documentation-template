@@ -18,7 +18,11 @@ const navigationConfig = [
   },
   {
     id: '/components/icon',
-    title: 'Icon',
+    title: 'icon',
+  },
+  {
+    id: '/components/tag',
+    title: 'tag',
   }
 ];
 

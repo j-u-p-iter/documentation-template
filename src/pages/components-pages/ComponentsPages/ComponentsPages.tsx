@@ -4,8 +4,9 @@ import { Route, RouteProps } from 'react-router-dom';
 import { switcherPageRoute } from '../SwitcherPage';
 import { selectPageRoute } from '../SelectPage';
 import { iconPageRoute } from '../IconPage';
+import { tagPageRoute } from '../TagPage';
 
-const componentsPagesRoutes = [switcherPageRoute, selectPageRoute, iconPageRoute];
+const componentsPagesRoutes = [switcherPageRoute, selectPageRoute, iconPageRoute, tagPageRoute];
 
 export const ComponentsPages: React.SFC<RouteProps> = ({ match: { url: baseUrl } }: any) => {
   return (

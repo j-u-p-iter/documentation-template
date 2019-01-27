@@ -770,6 +770,10 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
+"@j.u.p.iter/react-icon@1.0.1", "@j.u.p.iter/react-icon@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@j.u.p.iter/react-icon/-/react-icon-1.0.1.tgz#e27c1636ffff11a8dd14845b05ca9bf02e00b97b"
+
 "@j.u.p.iter/react-layout@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@j.u.p.iter/react-layout/-/react-layout-1.0.0.tgz#cbab642a0c2f5964027d79069260a01e2cb29045"
@@ -788,9 +792,20 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@j.u.p.iter/react-switcher/-/react-switcher-1.0.0.tgz#82811d4a4fffb78b5f8998a57934b71ac141a632"
 
+"@j.u.p.iter/react-tag@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@j.u.p.iter/react-tag/-/react-tag-1.1.0.tgz#2df1e8f34bab8571b09a4a6fad2ce7995bc14a2f"
+  dependencies:
+    "@j.u.p.iter/react-icon" "^1.0.1"
+    "@j.u.p.iter/svg-sprites" "^0.0.2"
+
 "@j.u.p.iter/react-tree@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@j.u.p.iter/react-tree/-/react-tree-1.0.1.tgz#fd1118f590680c7ee781514e7b99068e9cda8896"
+
+"@j.u.p.iter/svg-sprites@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@j.u.p.iter/svg-sprites/-/svg-sprites-0.0.2.tgz#b7fb57900f01f4beb4347226418632772a3d332d"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
