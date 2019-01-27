@@ -1,18 +1,19 @@
 .menu {
-  top: 0;
+  z-index: 2;
   background: #fff;
-  padding: 53px 22px 7px;
-  border-radius: 19px;
+  padding: 14px 22px 7px;
+  border-radius: 0 0 19px 19px;
   box-shadow: 0 5px 16px 0 rgba(0, 0, 0, .12);
 }
 
 .control {
   display: flex;
   align-items: center;
-  height: 40px;
+  min-height: 40px;
   border-radius: 22.5px;
   border: 1px solid #f1f1f1;
-  padding: 0 22px;
+  padding: 8px 22px;
+  color: #566270;
 }
 
 .arrow {
@@ -23,7 +24,9 @@
 }
 
 .label {
+  display: flex;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .invalid {
@@ -31,9 +34,17 @@
 }
 
 .opened {
-  border-color: transparent;
+  border-radius: 19px 19px 0 0;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, .12);
+  border: 0;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .placeholder {
   user-select: none;
+}
+
+.tag {
+  margin-right: 4px;
+  white-space: nowrap;
 }

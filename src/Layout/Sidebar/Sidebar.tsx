@@ -15,6 +15,10 @@ const navigationConfig = [
   {
     id: '/components/select',
     title: 'Select',
+  },
+  {
+    id: '/components/icon',
+    title: 'Icon',
   }
 ];
 
