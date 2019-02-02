@@ -1,12 +1,16 @@
 import * as React from 'react';
 
-import { CodeExample } from '../../../CodeExample';
+import { CodeExamples } from '../../../CodeExamples';
 import { Tag, Icon } from '../../../components';
 
-export const TagPage = () => {
-  return (
-    <CodeExample title='some title' description='some description'>
-      <Tag isClearable>some text</Tag>
-    </CodeExample>
-  );
-};
+const config = [{
+  title: 'some title',
+  description: 'some description',
+  codeSnippet: '*code* snippet',
+}, {
+  title: 'one more title',
+  description: 'one more description',
+  codeSnippet: 'one more code snippet',
+}];
+
+export const TagPage = () => <CodeExamples config={config} />;

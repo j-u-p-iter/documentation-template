@@ -8,7 +8,7 @@
     "@j.u.p.iter/react-navigation": "^1.0.0",
     "@j.u.p.iter/react-switcher": "^1.0.0",
     "@j.u.p.iter/react-tag": "1.1.0",
-    "@types/react-select": "^2.0.11",
+    "marked": "^0.6.0",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -32,10 +32,12 @@
   ],
   "devDependencies": {
     "@types/jest": "^23.3.10",
+    "@types/marked": "^0.6.0",
     "@types/node": "^10.12.18",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/react-router-dom": "^4.3.1",
+    "raw-loader": "^1.0.0",
     "typescript": "^3.2.2"
   }
 }

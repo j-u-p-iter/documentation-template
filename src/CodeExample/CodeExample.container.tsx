@@ -1,6 +1,8 @@
 import * as React from 'react';
+import marked from 'marked';
 import { SwitcherController } from '@j.u.p.iter/react-switcher';
 
+import { CodeExampleView } from './CodeExample.view';
 import styles from './CodeExample.module.scss';
 
 interface PseudoEvent {
@@ -13,6 +15,7 @@ interface PseudoEvent {
 interface Props {
   title: string;
   description: string;
+  codeSnippet: string;
 }
 
 export class CodeExample extends React.Component<Props> {
@@ -22,33 +25,22 @@ export class CodeExample extends React.Component<Props> {
     return <div dangerouslySetInnerHTML={{ __html: description }} />
   }
 
+  renderCodeSnippet = () => {
+    const { codeSnippet } = this.props;
+
+    return <div dangerouslySetInnerHTML={{ __html: marked(codeSnippet) }} />
+  }
+
   render() {
     const { title, description, children } = this.props;
 
     return (
-      <SwitcherController name='code-toggler' onChange={() => {}}>
-        {
-          ({ api: { getOn, toggleOn } }) => (
-            <div>
-              <header>
-                <h3>{title}</h3>
-
-                <button onClick={() => toggleOn()}>Toggler</button>
-              </header>
-
-              {
-                getOn() && (
-                  <div>Code</div>
-                )
-              }
-
-              {children}
-
-              {this.renderDescription()}
-            </div>
-          )
-        }
-      </SwitcherController>
+      <CodeExampleView
+        title={title}
+        description={this.renderDescription()}
+        codeSnippet={this.renderCodeSnippet()}
+        elementToShow={children}
+      />
     );
   }
 };
