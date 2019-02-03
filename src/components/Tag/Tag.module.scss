@@ -3,7 +3,7 @@
 .tag {
   display: inline-flex;
   align-items: center;
-  padding: 0 37px 0 10px;
+  padding: 0 10px;
   margin: 0 4px 4px 0;
   position: relative;
   height: 24px;
@@ -13,13 +13,22 @@
   font-size: 12px;
   font-weight: normal;
   line-height: 1;
+
+  i, 
+  svg {
+    position: absolute;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    fill: $color-white;
+  }
+
+  i {
+    height: 12px;
+  }
 }
 
-.icon {
-  position: absolute;
-  right: 10px;
-  width: 8px;
-  height: 8px;
-  cursor: pointer;
-  fill: $color-white;
+.clearable { 
+  padding-right: 37px;
 }

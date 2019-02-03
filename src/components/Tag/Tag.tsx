@@ -7,12 +7,11 @@ import styles from './Tag.module.scss';
 
 
 export const Tag = (props: any) => {
-  const { className } = props
+  const { className, isClearable } = props
 
   return (
     <TagComponent 
-      icon={<Icon name='cross' className={styles.icon} />}
-      className={classNames(styles.tag, className)}
+      className={classNames(styles.tag, className, { [styles.clearable]: isClearable })}
       {...props}
     />
   );

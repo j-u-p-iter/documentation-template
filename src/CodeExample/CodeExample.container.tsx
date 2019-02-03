@@ -35,7 +35,7 @@ export class CodeExample extends React.Component<Props> {
   renderDescription = () => {
     const { description } = this.props;
 
-    return <div dangerouslySetInnerHTML={{ __html: description }} />
+    return <div dangerouslySetInnerHTML={{ __html: marked(description) }} />
   }
 
   renderCodeSnippet = () => {
