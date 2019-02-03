@@ -1,0 +1,1 @@
+export { DefaultTagExample } from './DefaultTagExample';

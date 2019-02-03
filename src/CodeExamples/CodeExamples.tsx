@@ -2,27 +2,30 @@ import * as React from 'react';
 
 import { CodeExample } from '../CodeExample';
 
-type Config = {
+type ConfigItem = {
   title: string
   description: string;
   codeSnippet: string;
+  Component: any;
 }
 
 interface Props {
-  config: Config[];
+  config: ConfigItem[];
 }
 
 export const CodeExamples: React.SFC<Props> = ({ config }) => (
   <ul>
     {
-      config.map(({ title, description, codeSnippet }) => (
+      config.map(({ title, description, codeSnippet, Component }) => (
         <li>
           <CodeExample 
             key={title}
             title={title} 
             description={description} 
             codeSnippet={codeSnippet}
-          />
+          >
+            <Component />
+          </CodeExample>
         </li>
       ))
     }
