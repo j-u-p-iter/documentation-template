@@ -20,17 +20,17 @@ export const CodeExampleView: React.SFC<Props> = ({
     {
       ({ api: { getOn, toggleOn } }) => (
         <div className={styles.container}>
-          <header>
+          <header className={styles.header}>
             <h3 className={styles.title}>{title}</h3>
 
-            <button onClick={() => toggleOn()}>Toggler</button>
+            <button onClick={() => toggleOn()}>Toggle code example</button>
           </header>
 
-          {getOn() && codeSnippet}
+          {getOn() && <div className={styles.row}>{codeSnippet}</div>}
 
-          {elementToShow}
+          <div className={styles.row}>{elementToShow}</div>
 
-          {description}
+          <div className={styles.row}>{description}</div>
         </div>
       )
     }
