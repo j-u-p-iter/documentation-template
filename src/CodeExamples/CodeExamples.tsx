@@ -17,7 +17,7 @@ export const CodeExamples: React.SFC<Props> = ({ config }) => (
   <ul>
     {
       config.map(({ title, description, codeSnippet, Component }) => (
-        <li>
+        <li key={title}>
           <CodeExample 
             key={title}
             title={title} 

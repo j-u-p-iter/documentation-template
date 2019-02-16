@@ -1,0 +1,1 @@
+export { sprites } from './sprites';

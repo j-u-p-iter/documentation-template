@@ -9,20 +9,32 @@ const navigationConfig = [
     title: 'Home Page',
   },
   {
-    id: '/components/switcher',
-    title: 'Switcher',
-  },
-  {
-    id: '/components/select',
-    title: 'Select',
-  },
-  {
-    id: '/components/icon',
-    title: 'icon',
-  },
-  {
-    id: '/components/tag',
-    title: 'tag',
+    id: '/components',
+    title: 'Components',
+    children: [{
+      id: '/components/switcher',
+      title: 'Switcher',
+    },
+    {
+      id: '/components/select',
+      title: 'Select',
+    },
+    {
+      id: '/components/icon',
+      title: 'Icon',
+    },
+    {
+      id: '/components/tag',
+      title: 'Tag',
+    },
+    {
+      id: '/components/checkbox',
+      title: 'Checkbox',
+    }, 
+    {
+      id: '/components/input',
+      title: 'Input',
+    }]
   }
 ];
 

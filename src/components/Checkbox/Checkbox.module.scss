@@ -1,0 +1,29 @@
+.checkbox {
+  user-select: none;
+}
+
+.withIcon {
+  display: flex;
+  align-items: center;
+
+  input {
+    visibility: hidden;
+    position: absolute;
+
+    &:checked + .icon {
+      svg { visibility: visible; }
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  padding: 2px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+
+  svg {
+    visibility: hidden;
+  }
+}
