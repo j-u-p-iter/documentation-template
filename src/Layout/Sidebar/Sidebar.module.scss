@@ -4,7 +4,7 @@
   font-size: 16px;
 
   & > li {
-    margin: 0 0 10px;
+    padding: 0 0 10px;
   }
 
   a { 
@@ -13,12 +13,12 @@
   }
 
   li ul {
-    margin: 5px 0 0 10px;
+    display: none;
     font-weight: normal;
     font-size: 14px;
 
     li {
-      margin: 0 0 5px;
+      padding: 5px 0 0 10px;
     }
   }
 

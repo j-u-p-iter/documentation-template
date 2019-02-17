@@ -42,7 +42,7 @@ export const Sidebar = () => (
   <Navigation 
     currentPath='/'
     config={navigationConfig} 
-    activeClassName='active'
+    activeClassName={styles.active}
     className={styles.navigation}
   />
 );
